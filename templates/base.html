@@ -1,0 +1,31 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static '/css/all.css' %}">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{% static '/css/bootstrap.css' %}">
+  <!-- Custom -->
+  <link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+  <title>ERobot</title>
+</head>
+   <!-- Top Bar -->
+{% include 'partials/_topbar.html' %}
+ <!-- Nav bar -->
+{% include 'partials/_navbar.html' %}
+
+<!-- Main Content -->
+
+
+<body>
+{% block content %}
+{% endblock %}
+
+ <!-- Footer -->
+{% include 'partials/_footer.html' %}
+</body>
+</html>
